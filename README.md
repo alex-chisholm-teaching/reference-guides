@@ -4,8 +4,8 @@ Quick reference materials for Python Programming II students to remove uncertain
 
 ## What's Included
 
-- **[Python Style Guide](python-style-guide.md)** - Consistent naming conventions, formatting rules, and best practices for data analysis projects
-- **[Markdown Cheat Sheet](markdown-cheatsheet.md)** - Essential formatting reference for README files, documentation, and notes
+- **[Python Style Guide](code-style-guide.md)** - Consistent naming conventions, formatting rules, and best practices for data analysis projects
+- **[Markdown Cheat Sheet](markdown.md)** - Essential formatting reference for README files, documentation, and notes
 - **Additional Resources** - Coming soon
 
 ## Purpose
