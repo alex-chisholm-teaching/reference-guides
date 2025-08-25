@@ -1,5 +1,5 @@
 # Python Code Style Guide
-*For Python Programming II*
+*For Python Programming II (90-819)*
 
 ## Quick Reference
 This guide removes guesswork from coding decisions. When in doubt, follow these rules.
@@ -84,7 +84,26 @@ sql_query = "SELECT customer_id, name, total_purchases FROM customers WHERE regi
 
 ---
 
-## 4. Comments
+## 4. String Quotes
+**Rule: use double quotes for regular strings, single quotes only when needed**
+
+```python
+# Good - use double quotes consistently
+name = "John Smith"
+file_path = "data/sales.csv"
+sql_query = "SELECT * FROM customers WHERE age > 25"
+
+# Use single quotes when string contains double quotes
+message = 'The file "sales_data.csv" was not found'
+html_snippet = '<div class="container">Hello World</div>'
+
+# Bad - using single quotes when not needed
+name = 'John Smith'
+```
+
+---
+
+## 5. Comments
 **Rule: write comments above the code they describe**
 
 ```python
@@ -105,7 +124,7 @@ monthly_revenue = sales_df.groupby('month')['revenue'].sum()  # Calculate monthl
 
 ---
 
-## 5. Import Organization
+## 6. Import Organization
 **Rule: organize imports in three groups with blank lines between**
 
 ```python
@@ -127,7 +146,7 @@ from api_client import APIClient
 
 ---
 
-## 6. Constants
+## 7. Constants
 **Rule: ALL_CAPS with underscores**
 
 ```python
@@ -149,7 +168,7 @@ base_url = "https://api.weather.gov/stations"
 
 ---
 
-## 7. File Names
+## 8. File Names
 **Rule: lowercase with underscores, descriptive names**
 
 ```python
@@ -166,7 +185,7 @@ processor.py
 
 ---
 
-## 8. DataFrame and Data Variables
+## 9. DataFrame and Data Variables
 **Rule: use descriptive names ending in _df for DataFrames**
 
 ```python
@@ -182,7 +201,7 @@ api_response = requests.get(url)
 
 ---
 
-## 9. Spacing and Line Length
+## 10. Spacing and Line Length
 **Rule: keep lines under 100 characters, use spaces around operators**
 
 ```python
